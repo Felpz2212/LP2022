@@ -1,9 +1,5 @@
 <?php 
- include 'conexao.php';
- $pdo = Conexao::conectar(); 
- $sql = "select * from barbeiro order by id;";
- $lstBarbeiro = $pdo->query($sql); 
- Conexao::desconectar(); 
+ include 'menu.php';
 ?>
 
 <!DOCTYPE html>

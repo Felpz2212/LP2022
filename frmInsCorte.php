@@ -1,14 +1,10 @@
+<?php 
+ include 'menu.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,12 +12,12 @@
     <title>Document</title>
 </head>
 <body>
-   <div>
+   <div class="container">
         <form class="container" action="insCorte.php" method="POST">
-            <div class="container center-align">
+            <div class="container center-align grey">
                 <h1>Cadastrar Corte</h1>
             </div>
-            <div>
+            <div class="blue lighten-5">
                 <textarea id="textarea1" class="materialize-textarea" name="txtNome"></textarea>
                 <label for="textarea1">Nome do corte</label>
                 <textarea id="textarea1" class="materialize-textarea" name="txtDesc"></textarea>
@@ -29,6 +25,7 @@
                 <textarea id="textarea1" class="materialize-textarea" name="txtPreco"></textarea>
                 <label for="textarea1">Preço do corte</label>
             </div>
+            <br>
             <div class="row center-align" >
                 <button class="btn waves-effect waves-light green" type="submit" name="action">Cadastrar
                 <i class="material-icons right">send</i>

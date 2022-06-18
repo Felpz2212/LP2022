@@ -1,5 +1,6 @@
 <?php 
  include 'conexao.php';
+ include 'menu.php';
  $pdo = Conexao::conectar(); 
  $sql = "select * from corte order by id;";
  $lstCorte = $pdo->query($sql); 
@@ -14,19 +15,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
 </head>
 
 <body>
     <div class="container ">
-        <h1 class="light-green lighten-4">Listar Cortes</h1>
+        <h1 class="light-green lighten-4 center-align">Listar Cortes</h1>
         <table class="striped">
             <tr>
                 <th>ID</th>
