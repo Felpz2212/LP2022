@@ -1,5 +1,6 @@
 <?php 
     include 'conexao.php'; 
+
     $nome = trim($_POST['txt_Nome']); 
     $idade = trim($_POST['txt_Idade']);
     $entrada = trim($_POST['txt_Entrada']);

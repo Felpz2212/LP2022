@@ -1,6 +1,13 @@
 <?php 
  include 'conexao.php';
- include 'menu.php';
+ if(!isset($_SESSION)) session_start();
+
+if(!isset($_SESSION['admin'])== false){
+    include 'menuCliente.php';
+}else{
+    include 'menu.php';
+}
+
  $pdo = Conexao::conectar(); 
  $sql = "select * from corte order by id;";
  $lstCorte = $pdo->query($sql); 

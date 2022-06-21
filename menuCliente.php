@@ -20,8 +20,9 @@
         <div class="nav-wrapper">
             <a href="index.php" class="brand-logo"><img src="imagens/Logo.png"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="login.php">Login</a></li>
-                <li><a href="cadastroCli.php">Cadastrar</a></li>
+                <li><a href="lstBarbeiro.php">Ver Barbeiros</a></li>
+                <li><a href="cadastroCli.php">Agendar Corte</a></li>
+                <li><a href="lstCortes.php">Ver Cortes</a></li>
             </ul>
         </div>
   </nav>
