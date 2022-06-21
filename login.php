@@ -1,10 +1,14 @@
+<?php
+	include 'menuinicio.php';
+?>
+
 <link href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,16 +25,6 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <nav class="grey darken-4">
-	    <div class="nav-wrapper">
-		    <a href="index.php" class="brand-logo center"><img src="imagens/Logo.png"></a>
-		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-		    <ul class="right hide-on-med-and-down">
-				<li><a href="lstBarbeiro.php">Ver Barbeiros</a></li>
-		        <li><a href="lstCortes.php">Cortes que realizamos</a></li>
-		    </ul>
-		</div>
-  	</nav>
 	<div class="had-container">
 
 	     <div class="parallax-container logueo">
