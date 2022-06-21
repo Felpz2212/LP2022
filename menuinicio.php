@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,10 +20,7 @@
         <div class="nav-wrapper">
             <a href="index.php" class="brand-logo"><img src="imagens/Logo.png"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="frmInsCorte.php">Inserir Corte</a></li>
-                <li><a href="lstCortes.php">Listar Cortes</a></li>
-                <li><a href="frmBarbeiro.php">Cadastrar Barbeiro</a></li>
-                <li><a href="lstBarbeiro.php">Listar Barbeiro</a></li>
+                <li><a href="login.php">Login</a></li>
             </ul>
         </div>
   </nav>

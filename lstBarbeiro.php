@@ -27,7 +27,7 @@
 
 <body>
     <div class="container ">
-        <h1 class="light-green lighten-4">Listar Imóveis</h1>
+        <h1 class="light-green lighten-4">Listar Barbeiros</h1>
         <table class="striped">
             <tr>
                 <th>ID</th>
