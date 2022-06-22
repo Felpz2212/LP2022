@@ -2,7 +2,7 @@
  include 'conexao.php';
  if(!isset($_SESSION)) session_start();
 
-if(!isset($_SESSION['admin'])== false){
+if(!isset($_SESSION['admin']) == false){
     include 'menuCliente.php';
 }else{
     include 'menu.php';

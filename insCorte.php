@@ -5,7 +5,7 @@
     if(!isset($_SESSION['admin'])== false){
         die ("Cadastro não pode ser realizado");
     }
-    
+
     include 'conexao.php'; 
     $nome = trim($_POST['txtNome']); 
     $descricao = trim($_POST['txtDesc']);

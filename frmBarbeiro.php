@@ -1,5 +1,11 @@
 <?php
-include 'menu.php';
+if (!isset($_SESSION)) session_start();
+
+if (!isset($_SESSION['admin']) == false) {
+  include 'menuCliente.php';
+} else {
+  include 'menu.php';
+}
 ?>
 
 <!DOCTYPE html>
@@ -40,35 +46,35 @@ include 'menu.php';
         </div>
         <br>
         <select class="browser-default" name="txt_Entrada">
-            <option value="" disabled selected>Selecione o horário de entrada</option>
-            <option value="09">09</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
+          <option value="" disabled selected>Selecione o horário de entrada</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
         </select>
         <br>
         <select class="browser-default" name="txt_Saida">
-            <option value="" disabled selected>Selecione o horário de saída</option>
-            <option value="09">09</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
+          <option value="" disabled selected>Selecione o horário de saída</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
         </select>
         <br>
         <div class="left-align col s12 container">
