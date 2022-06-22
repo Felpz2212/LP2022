@@ -1,17 +1,17 @@
-<?php 
- include 'conexao.php';
-if(!isset($_SESSION)) session_start();
+<?php
+include 'conexao.php';
+if (!isset($_SESSION)) session_start();
 
-if(!isset($_SESSION['admin'])== false){
+if ($_SESSION['admin'] == false) {
     include 'menuCliente.php';
-}else{
+} else {
     include 'menu.php';
 }
 
- $pdo = Conexao::conectar(); 
- $sql = "select * from corte order by id;";
- $lstCorte = $pdo->query($sql); 
- Conexao::desconectar(); 
+$pdo = Conexao::conectar();
+$sql = "select * from corte order by id;";
+$lstCorte = $pdo->query($sql);
+Conexao::desconectar();
 ?>
 
 <!DOCTYPE html>
@@ -34,23 +34,23 @@ if(!isset($_SESSION['admin'])== false){
                 <th>Descrição</th>
                 <th>Preço</th>
             </tr>
-            <?php 
-           foreach($lstCorte as $corte){
-        ?>
-            <tr>
-                <td><?php echo $corte['id']?></td>
-                <td><?php echo $corte['nome']?></td>
-                <td><?php echo $corte['descricao'] ?></td>
-                <td>R$<?php echo $corte['preco'] ?></td>
-                <td class="center">
-                </td>
-                <td></td>
-            </tr>
+            <?php
+            foreach ($lstCorte as $corte) {
+            ?>
+                <tr>
+                    <td><?php echo $corte['id'] ?></td>
+                    <td><?php echo $corte['nome'] ?></td>
+                    <td><?php echo $corte['descricao'] ?></td>
+                    <td>R$<?php echo $corte['preco'] ?></td>
+                    <td class="center">
+                    </td>
+                    <td></td>
+                </tr>
             <?php } ?>
         </table>
     </div>
-        </br>
-        </br>
+    </br>
+    </br>
 </body>
 
 </html>

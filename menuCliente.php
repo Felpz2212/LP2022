@@ -22,7 +22,7 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="lstBarbeiro.php">Ver Barbeiros</a></li>
                 <li><a href="agendarCorte.php">Agendar Corte</a></li>
-                <li><a href="lstCortes.php">Ver Cortes</a></li>
+                <li><a href="lstCortes.php">Listar Cortes</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </div>

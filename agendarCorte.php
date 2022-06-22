@@ -1,11 +1,11 @@
 <?php
 include 'conexao.php';
-if (!isset($_SESSION)) session_start();
+if(!isset($_SESSION)) session_start();
 
-if (!isset($_SESSION['admin']) == false) {
-    include 'menuCliente.php';
-} else {
-    include 'menu.php';
+if($_SESSION['admin'] == false){
+  include 'menuCliente.php';
+}else{
+  include 'menu.php';
 }
 
 $pdo = Conexao::conectar();

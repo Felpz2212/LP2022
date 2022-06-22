@@ -1,11 +1,11 @@
 <?php
-if (!isset($_SESSION)) session_start();
+ if(!isset($_SESSION)) session_start();
 
-if (!isset($_SESSION['admin']) == false) {
-  include 'menuCliente.php';
-} else {
-  include 'menu.php';
-}
+  if($_SESSION['admin'] == false){
+    include 'menuCliente.php';
+  }else{
+    include 'menu.php';
+  }
 ?>
 
 <!DOCTYPE html>
@@ -77,6 +77,14 @@ if (!isset($_SESSION['admin']) == false) {
           <option value="20">20</option>
         </select>
         <br>
+        <div>
+          <input id="icon_prefix" type="text" class="validate" name="txtEmail">
+          <label for="icon_prefix">Email do Barbeiro</label>
+        </div>
+        <div>
+          <input id="icon_prefix" type="password" class="validate" name="txtPwd">
+          <label for="icon_prefix">Senha</label>
+        </div>
         <div class="left-align col s12 container">
           <div class="row center-align">
             <button class="btn waves-effect waves-light green" type="submit" name="action">Cadastrar

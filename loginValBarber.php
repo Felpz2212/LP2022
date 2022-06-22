@@ -4,7 +4,7 @@
 
    include 'conexao.php';
 
-   $sql = "select * from cliente where email LIKE ?";
+   $sql = "select * from barbeiro where email LIKE ?";
    $pdo = Conexao::conectar();
    $query = $pdo->prepare($sql);
    $query->execute (array($user));
@@ -16,17 +16,14 @@
 
    Conexao::desconectar();
 
-   if(md5($Pwd) == $dados['password']){
+   if(md5($Pwd) == $dados['senha']){
     session_start();
     $_SESSION['user'] = $dados['email'];
-    $_SESSION['Pwd'] = $dados['password'];
+    $_SESSION['senha'] = $dados['senha'];
     $_SESSION['admin'] = $dados['admin'];
-    
-    if($_SESSION['admin'] == false){
-    header("location:lstBarbeiro.php");
-    }else{
-        header("location:frmBarbeiro.php");
-    }
+   
+    header('location:lstBarbeiro.php');
+   
    }else{
     echo "Senha ou Email Inválidos";
    }

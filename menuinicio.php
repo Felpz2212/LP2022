@@ -21,6 +21,7 @@
             <a href="index.php" class="brand-logo"><img src="imagens/Logo.png"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="login.php">Login</a></li>
+                <li><a href="loginBarber.php">Login Barbeiro</a></li>
                 <li><a href="cadastroCli.php">Cadastrar</a></li>
             </ul>
         </div>

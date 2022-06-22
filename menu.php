@@ -24,6 +24,7 @@
                 <li><a href="lstCortes.php">Listar Cortes</a></li>
                 <li><a href="frmBarbeiro.php">Cadastrar Barbeiro</a></li>
                 <li><a href="lstBarbeiro.php">Listar Barbeiro</a></li>
+                <li><a href="verCortes.php">Ver cortes</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </div>
