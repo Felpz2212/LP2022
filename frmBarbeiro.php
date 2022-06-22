@@ -70,6 +70,7 @@ include 'menu.php';
             <option value="19">19</option>
             <option value="20">20</option>
         </select>
+        <br>
         <div class="left-align col s12 container">
           <div class="row center-align">
             <button class="btn waves-effect waves-light green" type="submit" name="action">Cadastrar
