@@ -1,11 +1,11 @@
 <?php
 include 'conexao.php';
-if(!isset($_SESSION)) session_start();
+if (!isset($_SESSION)) session_start();
 
-if($_SESSION['admin'] == false){
-  include 'menuCliente.php';
-}else{
-  include 'menu.php';
+if ($_SESSION['admin'] == false) {
+    include 'menuCliente.php';
+} else {
+    include 'menu.php';
 }
 
 $pdo = Conexao::conectar();
@@ -61,8 +61,8 @@ Conexao::desconectar();
         <br>
         <div class="container">
             <button class="btn waves-effect waves-light green" type="submit" name="action">Agendar
-            <i class="material-icons right">send</i>
-        </div>        
+                <i class="material-icons right">send</i>
+        </div>
     </form>
 </body>
 
