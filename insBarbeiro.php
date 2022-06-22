@@ -14,4 +14,5 @@
         $query->execute(array($nome, $idade, $entrada, $saida));
         Conexao::desconectar(); 
     }
+    header("location:lstBarbeiro.php");
 ?> 

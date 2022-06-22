@@ -20,7 +20,7 @@ include 'menuinicio.php'
         <form class="col s12" method="POST" action="cadastrarCliente.php">
             <div class="row">
                 <div class="input-field col s12">
-                    <input placeholder="Placeholder" id="first_name" type="text" name="txtNome" class="validate">
+                    <input id="first_name" type="text" name="txtNome" class="validate">
                     <label for="first_name">Nome</label>
                 </div>
             </div>
@@ -40,7 +40,12 @@ include 'menuinicio.php'
                 <button class="btn waves-effect waves-light" type="submit" name="action">Cadastrar
                     <i class="material-icons right">send</i>
                 </button>
-
+            </div>
+            <br>
+            <div>
+                <button class="btn waves-effect waves-light red" type="reset" name="action"> Limpar
+                    <i class="material-icons right">clear_all</i>
+                </button>
             </div>
         </form>
     </div>

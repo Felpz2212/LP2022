@@ -12,4 +12,6 @@
         $query->execute(array($nome, $descricao, $preco));
         Conexao::desconectar(); 
     }
+
+    header("location:lstCorte.php");
 ?> 
