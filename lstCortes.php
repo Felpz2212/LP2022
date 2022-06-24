@@ -33,6 +33,7 @@ Conexao::desconectar();
                 <th>Nome</th>
                 <th>Descrição</th>
                 <th>Preço</th>
+                <th>Funções</th>
             </tr>
             <?php
             foreach ($lstCorte as $corte) {
@@ -42,13 +43,18 @@ Conexao::desconectar();
                     <td><?php echo $corte['nome'] ?></td>
                     <td><?php echo $corte['descricao'] ?></td>
                     <td>R$<?php echo $corte['preco'] ?></td>
-                    <td class="center"></td>
+                    <?php if($_SESSION['admin'] == true){?>
                     <td class="center">
                         <a class="btn-floating btn-small waves-effect waves-light orange" onclick="JavaScript:location.href='frmEdtCorte.php?id=' + 
                            <?php echo $corte['id']; ?>">
                             <i class="material-icons">edit</i>
                         </a>
+                        <a class="btn-floating btn-small waves-effect waves-light red" onclick="JavaScript:location.href='delCorte.php?id=' + 
+                           <?php echo $corte['id']; ?>">
+                            <i class="material-icons">clear</i>
+                        </a>
                     </td>
+                    <?php }?>
                 </tr>
             <?php } ?>
         </table>

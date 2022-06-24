@@ -11,6 +11,8 @@
     $descricao = trim($_POST['txtDesc']);
     $preco = trim($_POST['txtPreco']);
 
+    $preco=str_replace(",",".",$preco);
+
     if (!empty($nome) && !empty($descricao) && !empty($preco)){
         $pdo = Conexao::conectar(); 
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
@@ -20,5 +22,5 @@
         Conexao::desconectar(); 
     }
 
-    header("location:lstCorte.php");
+    header("location:lstCortes.php");
 ?> 

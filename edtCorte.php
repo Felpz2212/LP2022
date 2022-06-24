@@ -13,6 +13,7 @@
     $preco = trim($_POST['txtPreco']);
     $id = $_POST['txtID'];
 
+    $preco=str_replace(",",".",$preco);
 
     if (!empty($id) && !empty($nome) && !empty($descricao) && !empty($preco)){
         $pdo = Conexao::conectar(); 

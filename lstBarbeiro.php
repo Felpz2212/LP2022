@@ -38,6 +38,7 @@
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
+                <th>Funções</th>
             </tr>
             <?php 
            foreach($lstBarbeiro as $barbeiro){
@@ -45,7 +46,18 @@
             <tr>
                 <td><?php echo $barbeiro['id']?></td>
                 <td><?php echo $barbeiro['nome']?></td>
-                <td class="center">
+                <?php if($_SESSION['admin'] == true){?>
+                    <td class="center">
+                        <a class="btn-floating btn-small waves-effect waves-light orange" onclick="JavaScript:location.href='frmEdtBarbeiro.php?id=' + 
+                           <?php echo $barbeiro['id']; ?>">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a class="btn-floating btn-small waves-effect waves-light red" onclick="JavaScript:location.href='delBarbeiro.php?id=' + 
+                           <?php echo $barbeiro['id']; ?>">
+                            <i class="material-icons">clear</i>
+                        </a>
+                    </td>
+                    <?php }?>
                 </td>
                 <td></td>
             </tr>
