@@ -42,9 +42,13 @@ Conexao::desconectar();
                     <td><?php echo $corte['nome'] ?></td>
                     <td><?php echo $corte['descricao'] ?></td>
                     <td>R$<?php echo $corte['preco'] ?></td>
+                    <td class="center"></td>
                     <td class="center">
+                        <a class="btn-floating btn-small waves-effect waves-light orange" onclick="JavaScript:location.href='frmEdtCorte.php?id=' + 
+                           <?php echo $corte['id']; ?>">
+                            <i class="material-icons">edit</i>
+                        </a>
                     </td>
-                    <td></td>
                 </tr>
             <?php } ?>
         </table>
