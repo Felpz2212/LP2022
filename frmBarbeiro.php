@@ -1,11 +1,11 @@
 <?php
- if(!isset($_SESSION)) session_start();
+if (!isset($_SESSION)) session_start();
 
-  if($_SESSION['admin'] == false){
-    include 'menuCliente.php';
-  }else{
-    include 'menu.php';
-  }
+if ($_SESSION['admin'] == false) {
+  include 'menuCliente.php';
+} else {
+  include 'menu.php';
+}
 ?>
 
 <!DOCTYPE html>
@@ -86,13 +86,15 @@
           <label for="icon_prefix">Senha</label>
         </div>
         <div class="left-align col s12 container">
-          <div class="row center-align">
+          <div class="row">
             <button class="btn waves-effect waves-light green" type="submit" name="action">Cadastrar
               <i class="material-icons right">send</i>
               <br>
-              <button class="btn waves-effect waves-light red" type="reset" name="action"> Limpar
-                <i class="material-icons right">clear_all</i>
-              </button>
+          </div>
+          <div class="row">
+            <button class="btn waves-effect waves-light red" type="reset" name="action"> Limpar
+              <i class="material-icons right">clear_all</i>
+            </button>
           </div>
         </div>
     </form>
