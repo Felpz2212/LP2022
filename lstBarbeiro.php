@@ -38,7 +38,9 @@
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
+                <?php if($_SESSION['admin'] == true){?>
                 <th>Funções</th>
+                <?php }?>
             </tr>
             <?php 
            foreach($lstBarbeiro as $barbeiro){
